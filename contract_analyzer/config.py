@@ -16,7 +16,7 @@ class Settings:
         137: env("POLYGONSCAN_API_KEY", ""),
     }
     ASI_ONE_URL = env("ASI_ONE_URL", "https://api.asi1.ai/v1/chat/completions")
-    ASI_ONE_API_KEY = env("ASI_ONE_API_KEY", "sk_a2bfc9202dbe4f31bd7baa4c78a6aeb061a984ed8b17410d9f5a6898cca9e16c")
+    ASI_ONE_API_KEY = env("ASI_ONE_API_KEY")
     ASI_ONE_MODEL = env("ASI_ONE_MODEL", "asi1-mini")   # put the exact model slug you use
     ASI_ONE_TEMPERATURE = float(env("ASI_ONE_TEMPERATURE", "0.2"))
     ASI_ONE_MAX_TOKENS = int(env("ASI_ONE_MAX_TOKENS", "8000"))

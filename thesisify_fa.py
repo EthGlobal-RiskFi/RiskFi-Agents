@@ -416,7 +416,7 @@ if __name__ == "__main__":
             out = dict(payload)
             out["thesis"] = thesis
         else:
-            api_key = args.api_key or os.getenv("ASI_ONE_API_KEY", "sk_a2bfc9202dbe4f31bd7baa4c78a6aeb061a984ed8b17410d9f5a6898cca9e16c")
+            api_key = args.api_key or os.getenv("ASI_ONE_API_KEY")
             out = thesisify_fundamental(payload, api_key=api_key, model=args.model)
         json.dump(out, sys.stdout, ensure_ascii=False, separators=(",", ":"), indent=2)
         sys.stdout.write("\n")
